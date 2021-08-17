@@ -1,0 +1,25 @@
+{
+  "exp": {
+    "name": "pix2pix_exp_1",
+    "img_height": 256,
+    "img_width": 256
+  },
+  "loader": {
+    "buffer_size": 400,
+    "batch_size": 1,
+    "height_jitter": 20,
+    "width_jitter": 20,
+    "data_dir": "./datasets/color",
+    "train_percent": 0.7,
+    "test_percent": 0.3
+  },
+  "model":{
+    "plot_dir": "./plots",
+    "weights_dir": "./weights"
+  },
+  "trainer":{
+    "steps": 40000,
+    "checkpoint_dir": "./training_checkpoints",
+    "log_dir": "./logs"
+  }
+}

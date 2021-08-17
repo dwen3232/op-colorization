@@ -1,0 +1,9 @@
+_x_ add new data loader for direct grayscale
+_x_ clean datasets/color
+
+___ add cycleGAN model and trainer
+___ add ACLGAN model and trainer
+
+# Future
+___ add factory methods
+
