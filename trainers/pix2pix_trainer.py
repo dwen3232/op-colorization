@@ -60,6 +60,7 @@ class Pix2pixTrainer(BaseTrainer):
             if (step + 1) % 5000 == 0:
                 self.checkpoint.save(file_prefix=str(self.checkpoint_dir / "ckpt"))
 
+        # this should probably be moved somewhere else
         for i in range(10):
             example_input, example_target = next(iter(test_ds.take(1)))
             generate_images(self.model.generator, example_input, example_target)

@@ -34,6 +34,14 @@ def plot_dataset_images(dataset):
         plt.axis('off')
     plt.show()
 
+
+def plot_image(image, title, cmap=None):
+    plt.figure()
+    plt.title(title)
+    plt.imshow(image, cmap=cmap)
+    plt.axis('off')
+    plt.show()
+
 # def load(self, image_file):
 #     color = tf.io.read_file(image_file)
 #     color = tf.io.decode_png(color, channels=3)
