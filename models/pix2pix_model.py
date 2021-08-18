@@ -38,7 +38,7 @@ class Pix2pixModel(BaseModel):
 
         print("Loading model checkpoint {} ...\n".format(self.weights_dir))
         self.generator.load_weights(str(self.weights_dir / 'generator'))
-        self.discriminator.load_weights(str(self.weights_dir / 'generator'))
+        self.discriminator.load_weights(str(self.weights_dir / 'discriminator'))
         print("Model loaded")
 
     def build_model(self):
